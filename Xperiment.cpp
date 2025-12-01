@@ -4,31 +4,23 @@
 #include <limits>
 
 enum class ParseError {
-    InvalidCharacter,
-    BlankInterDigits,
-    Overflow,
-    Empty,
-    // Nuevos errores para formato de dígito
-    InvalidPrefix,        // No es "d" o "dig"
-    MissingDelimiter,     // No se encuentra "#" o "["
-    MismatchedDelimiter,  // "#" no coincide con "#", "[" no coincide con "]"
-    InvalidDigit,         // Error en parsing del dígito
-    MissingB,            // No se encuentra "B"
-    InvalidBase,         // Error en parsing de la base
-    BaseOutOfRange       // base-1 > uint32_max
+    InvalidCharacter,       // Carácter inválido encontrado
+    BlankInterDigits,       // Espacios en blanco entre dígitos
+    Overflow,               // Overflow al parsear número
+    Empty,                  // No se encontró ningún carácter válido
+    InvalidPrefix,          // No es "d" o "dig"
+    MissingDelimiter,       // No se encuentra "#" o "["
+    EmptyDigit,             // Dígito vacío    
+    MismatchedDelimiter,    // "#" no coincide con "#", "[" no coincide con "]"
+    InvalidDigit,           // Error en parsing del dígito
+    MissingB,               // No se encuentra "B"
+    InvalidBase,            // Error en parsing de la base
+    EmptyBase,              // Base vacía
+    BlankInterDigitsOfBase, // Espacios en blanco entre dígitos de la base
+    BaseOutOfRange,         // base-1 > uint32_max
+    UnknownError            // Error desconocido
 };
 
-// Estructura que faltaba en el código original
-struct DigitResult {
-    std::uint64_t digit;
-    std::uint64_t base;
-    std::uint32_t result;
-
-    constexpr DigitResult(std::uint64_t d, std::uint64_t b)
-        : digit(d), base(b), result(static_cast<std::uint32_t>(d % b)) {}
-};
-
-#include "expected_cpp14.hpp"
 
 // Helper para skippear blancos
 constexpr int skip_whitespace(const char* str, int index) noexcept {
@@ -77,47 +69,6 @@ constexpr Expected<std::uint64_t, ParseError> parse_number_simple(const char* co
     }
 
     return Expected<std::uint64_t, ParseError>(result);
-}
-
-// Función 'parse' que faltaba, necesaria para la clase Xperiment
-constexpr Expected<std::uint64_t, ParseError> parse(const char* const str) noexcept {
-    if (str == nullptr || str[0] == '\0') {
-        return make_unexpected(ParseError::Empty);
-    }
-    int start_index = 0;
-    start_index = skip_whitespace(str, start_index);
-
-    if (str[start_index] == '\0') {
-        return make_unexpected(ParseError::Empty);
-    }
-
-    int end_index = 0;
-    auto result = parse_number_simple(str, start_index, end_index);
-
-    if (!result.has_value()) {
-        return result;
-    }
-
-    // After a valid number, check for trailing characters.
-    int final_index = skip_whitespace(str, end_index);
-    if (str[final_index] != '\0') {
-        // Check if it was a blank between digits
-        bool has_more_digits = false;
-        int temp_idx = final_index;
-        while(str[temp_idx] != '\0') {
-            if (str[temp_idx] >= '0' && str[temp_idx] <= '9') {
-                has_more_digits = true;
-                break;
-            }
-            temp_idx++;
-        }
-        if (has_more_digits) {
-            return make_unexpected(ParseError::BlankInterDigits);
-        }
-        return make_unexpected(ParseError::InvalidCharacter);
-    }
-
-    return result;
 }
 
 // Versión simplificada del parser de formato de dígito para MSVC C++14
@@ -276,13 +227,15 @@ struct Xperiment {
     constexpr bool success() const noexcept { return result.has_value(); }
 };
 
-template<std::uint64_t B, typename std::enable_if<(B >= 2 && (B - 1) <= 4294967295ULL), int>::type = 0>
+template<std::uint64_t B>
+	requires (B >= 2 && B-1 <= std::numeric_limits<std::uint32_t>::max())
 struct digit {
     std::uint32_t value;
     constexpr digit(std::uint64_t v) noexcept : value(static_cast<std::uint32_t>(v % B)) {}
 };
 
-template<std::uint64_t B, typename std::enable_if<(B >= 2 && (B - 1) <= 4294967295ULL), int>::type = 0>
+template<std::uint64_t B>
+	requires (B >= 2 && B - 1 <= std::numeric_limits<std::uint32_t>::max())
 struct DigitXperiment {
     const Expected<digit<B>, ParseError> result;
 
@@ -306,16 +259,11 @@ static_assert(experiment1.result && *experiment1.result == 123, "Parse '123' sho
 static_assert(experiment2.result && *experiment2.result == 456789, "Parse '456789' should succeed with value 456789");
 static_assert(experiment3.result && *experiment3.result == 18446744073709551615ULL, "Parse max uint64_t should succeed");
 
-// Tests para formato de dígito. Se necesita una versión no-template para constexpr
-using DigitXperiment3 = DigitXperiment<3>;
-using DigitXperiment7 = DigitXperiment<7>;
-using DigitXperiment10 = DigitXperiment<10>;
-using DigitXperiment16 = DigitXperiment<16>;
-
-constexpr DigitXperiment3 digitExp1("d#5#B3");              // 5 % 3 = 2
-constexpr DigitXperiment10 digitExp2("dig [7] B 10");        // 7 % 10 = 7
-constexpr DigitXperiment7 digitExp3("d  #  100  #  B  7");  // 100 % 7 = 2
-constexpr DigitXperiment16 digitExp4("dig[15]B16");          // 15 % 16 = 15
+// Tests para formato de dígito
+constexpr DigitXperiment digitExp1("d#5#B3");              // 5 % 3 = 2
+constexpr DigitXperiment digitExp2("dig [7] B 10");        // 7 % 10 = 7
+constexpr DigitXperiment digitExp3("d  #  100  #  B  7");  // 100 % 7 = 2
+constexpr DigitXperiment digitExp4("dig[15]B16");          // 15 % 16 = 15
 
 static_assert(digitExp1.result && digitExp1.valor() == 2 && digitExp1.digit() == 5 && digitExp1.base() == 3, "d#5#B3 should work");
 static_assert(digitExp2.result && digitExp2.valor() == 7 && digitExp2.digit() == 7 && digitExp2.base() == 10, "dig [7] B 10 should work");
@@ -323,12 +271,12 @@ static_assert(digitExp3.result && digitExp3.valor() == 2 && digitExp3.digit() ==
 static_assert(digitExp4.result && digitExp4.valor() == 15 && digitExp4.digit() == 15 && digitExp4.base() == 16, "dig[15]B16 should work");
 
 // Test error cases para formato de dígito
-constexpr DigitXperiment digitError1("x#5#B3");            // InvalidPrefix
-constexpr DigitXperiment digitError2("d5B3");              // MissingDelimiter
-constexpr DigitXperiment digitError3("d#5]B3");            // MismatchedDelimiter
-constexpr DigitXperiment digitError4("d[5[B3");            // MismatchedDelimiter
-constexpr DigitXperiment digitError5("d#5#C3");            // MissingB
-constexpr DigitXperiment digitError6("d#5#B0");            // BaseOutOfRange (base-1 = -1)
+constexpr DigitXperiment3 digitError1("x#5#B3");            // InvalidPrefix
+constexpr DigitXperiment3 digitError2("d5B3");              // MissingDelimiter
+constexpr DigitXperiment3 digitError3("d#5]B3");            // MismatchedDelimiter
+constexpr DigitXperiment3 digitError4("d[5[B3");            // MismatchedDelimiter
+constexpr DigitXperiment3 digitError5("d#5#C3");            // MissingB
+constexpr DigitXperiment3 digitError6("d#5#B0");            // BaseOutOfRange (base-1 = -1)
 
 static_assert(!digitError1.result && digitError1.error() == ParseError::InvalidPrefix, "x#5#B3 should fail with InvalidPrefix");
 static_assert(!digitError2.result && digitError2.error() == ParseError::MissingDelimiter, "d5B3 should fail with MissingDelimiter");
