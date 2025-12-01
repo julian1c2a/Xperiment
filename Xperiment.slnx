@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="Xperiment.vcxproj" />
+  <Project Path="../../../../../../../../msys64/home/julia/Xperiment/Xperiment.vcxproj" Id="59484d46-e300-4702-957a-ba75488ef65d" />
 </Solution>

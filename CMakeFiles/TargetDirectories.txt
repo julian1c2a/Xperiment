@@ -1,0 +1,4 @@
+C:/msys64/home/julia/Xperiment/CMakeFiles/Xperiment.dir
+C:/msys64/home/julia/Xperiment/CMakeFiles/run_tests.dir
+C:/msys64/home/julia/Xperiment/CMakeFiles/edit_cache.dir
+C:/msys64/home/julia/Xperiment/CMakeFiles/rebuild_cache.dir

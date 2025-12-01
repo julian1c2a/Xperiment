@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/msys64/home/julia/Xperiment/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
