@@ -10,6 +10,7 @@ struct NonTrivial {
     static int copy_constructions;
     static int move_constructions;
 
+    NonTrivial(const char* str) : s(str) {}
     NonTrivial(const std::string& str = "") : s(str) {}
     NonTrivial(const NonTrivial& other) : s(other.s) {
         copy_constructions++;
@@ -196,7 +197,57 @@ void test_in_place_construction() {
     assert(e3.has_value());
     assert(e3.value().s == "in-place");
     assert(NonTrivial::copy_constructions == 0);
-    //assert(NonTrivial::move_constructions == 0); // This might fail depending on string implementation
+    assert(NonTrivial::move_constructions == 0);
+}
+
+
+void test_constexpr() {
+    std::cout << "--- Testing Constexpr ---
+";
+    // Test constexpr constructors and has_value
+    constexpr Expected<int, int> e1(42);
+    static_assert(e1.has_value(), "e1 should have a value");
+    static_assert(*e1 == 42, "e1's value should be 42");
+
+    constexpr Expected<int, int> e2(make_unexpected(10));
+    static_assert(!e2.has_value(), "e2 should not have a value");
+    static_assert(e2.error() == 10, "e2's error should be 10");
+
+    // Test value_or
+    constexpr int val_or = e2.value_or(100);
+    static_assert(val_or == 100, "value_or should return the default value");
+    
+    // Test void specialization
+    constexpr Expected<void, int> v_ok;
+    static_assert(v_ok.has_value(), "void specialization should have a value");
+    
+    // This is a runtime test, but it's related to constexpr behavior
+    std::cout << "Constexpr tests passed at compile time.\n";
+}
+
+struct ErrorA {
+    int code;
+    const char* msg;
+};
+
+struct ErrorB {
+    int code;
+    const char* msg;
+    constexpr ErrorB(const ErrorA& a) : code(a.code), msg(a.msg) {}
+};
+
+void test_unexpected_conversion() {
+    std::cout << "--- Testing Unexpected Conversion ---\n";
+    auto unexA = make_unexpected(ErrorA{10, "Error A"});
+    Expected<int, ErrorA> eA = unexA;
+
+    // Implicit conversion from Unexpected<ErrorA> to Unexpected<ErrorB>
+    Expected<int, ErrorB> eB = eA;
+
+    assert(!eB.has_value());
+    assert(eB.error().code == 10);
+    assert(std::string(eB.error().msg) == "Error A");
+    std::cout << "Unexpected conversion test passed.\n";
 }
 
 int main() {
@@ -215,6 +266,12 @@ int main() {
     std::cout << std::endl;
 
     test_in_place_construction();
+    std::cout << std::endl;
+
+    test_constexpr();
+    std::cout << std::endl;
+
+    test_unexpected_conversion();
     std::cout << std::endl;
     
     std::cout << "All tests passed!" << std::endl;
