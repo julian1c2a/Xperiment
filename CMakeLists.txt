@@ -14,3 +14,18 @@ if(MSVC)
 else()
   target_compile_options(Xperiment PRIVATE -std=c++14 -pedantic -Wall -Wextra -Werror)
 endif()
+
+# --- Test executable for expected_cpp14.hpp ---
+add_executable(run_tests test_expected.cpp)
+
+# Aplicar las mismas flags estrictas al ejecutable de test
+if(MSVC)
+  target_compile_options(run_tests PRIVATE "/permissive-" "/std:c++14" "/W4" "/EHsc")
+else()
+  target_compile_options(run_tests PRIVATE -std=c++14 -pedantic -Wall -Wextra -Werror)
+endif()
+
+# Recordando tu preferencia, colocar el ejecutable del test en 'build/build_tests'
+set_target_properties(run_tests PROPERTIES
+    RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/build_tests"
+)
