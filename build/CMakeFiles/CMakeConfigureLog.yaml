@@ -1689,3 +1689,1298 @@ events:
       
       
 ...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineSystem.cmake:212 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Windows - 10.0.26200 - AMD64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "C:/msys64/ucrt64/share/cmake/Modules/"
+    found: "C:/msys64/ucrt64/share/cmake/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      ENV{PATH}:
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\VCPackages"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\bin\\Roslyn"
+        - "C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v10.0A\\bin\\NETFX 4.8 Tools\\x64\\"
+        - "C:\\Program Files (x86)\\HTML Help Workshop"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\FSharp\\Tools"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Team Tools\\DiagnosticsHub\\Collector"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\Llvm\\x64\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x64"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\\\MSBuild\\Current\\Bin\\amd64"
+        - "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\Tools\\"
+        - "C:\\msys64\\home\\julia\\.cabal\\bin"
+        - "C:\\ghcup\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\ucrt64\\bin\\site_perl\\5.38.4"
+        - "C:\\msys64\\ucrt64\\bin\\vendor_perl"
+        - "C:\\msys64\\ucrt64\\bin\\core_perl"
+        - "C:\\msys64\\usr\\local\\bin"
+        - "C:\\msys64\\usr\\bin"
+        - "C:\\msys64\\usr\\bin"
+        - "C:\\Windows\\System32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\msys64\\ucrt64\\lib\\emscripten"
+        - "C:\\msys64\\ucrt64\\lib\\rustup\\bin"
+        - "C:\\Program Files\\Microsoft VS Code\\bin"
+        - "D:\\gdrive\\numericrepresentations_gamma"
+        - "D:\\gdrive\\numericrepresentations_gamma\\scripts"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\vcpkg"
+      ENV{INCLUDE}:
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\include"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\ATLMFC\\include"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Auxiliary\\VS\\include"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.26100.0\\ucrt"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\\\include\\10.0.26100.0\\\\um"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\\\include\\10.0.26100.0\\\\shared"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\\\include\\10.0.26100.0\\\\winrt"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\\\include\\10.0.26100.0\\\\cppwinrt"
+        - "C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\include\\um"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      Versi├│n de MSBuild 17.14.23+b0019275e para .NET Framework
+      Compilaci├│n iniciada a las 01/12/2025 20:58:24.
+      
+      Proyecto "C:\\msys64\\home\\julia\\Xperiment\\build\\CMakeFiles\\4.2.0\\CompilerIdCXX\\CompilerIdCXX.vcxproj" en nodo 1 (destinos predeterminados).
+      PrepareForBuild:
+        Creando directorio "Debug\\".
+        La salida estructurada est├í habilitada. El formato del diagn├│stico del compilador reflejar├í la jerarqu├¡a de errores. Consulte https://aka.ms/cpp/structured-output para obtener m├ís detalles.
+        Creando directorio "Debug\\CompilerIdCXX.tlog\\".
+      InitializeBuildStatus:
+        Se crear├í "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" porque se especific├│ "AlwaysCreate".
+        Aplicando tarea Touch a "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+      ClCompile:
+        D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+      LINK : fatal error LNK1104: no se puede abrir el archivo 'ucrtd.lib' [C:\\msys64\\home\\julia\\Xperiment\\build\\CMakeFiles\\4.2.0\\CompilerIdCXX\\CompilerIdCXX.vcxproj]
+      Compilaci├│n del proyecto terminada "C:\\msys64\\home\\julia\\Xperiment\\build\\CMakeFiles\\4.2.0\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (destinos predeterminados) -- ERROR.
+      
+      ERROR al compilar.
+      
+      "C:\\msys64\\home\\julia\\Xperiment\\build\\CMakeFiles\\4.2.0\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (destino predeterminado) (1) ->
+      (Link destino) -> 
+        LINK : fatal error LNK1104: no se puede abrir el archivo 'ucrtd.lib' [C:\\msys64\\home\\julia\\Xperiment\\build\\CMakeFiles\\4.2.0\\CompilerIdCXX\\CompilerIdCXX.vcxproj]
+      
+          0 Advertencia(s)
+          1 Errores
+      
+      Tiempo transcurrido 00:00:02.15
+      
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "C:/msys64/ucrt64/share/cmake/Modules/"
+    found: "C:/msys64/ucrt64/share/cmake/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      ENV{PATH}:
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\VCPackages"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\bin\\Roslyn"
+        - "C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v10.0A\\bin\\NETFX 4.8 Tools\\x64\\"
+        - "C:\\Program Files (x86)\\HTML Help Workshop"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\FSharp\\Tools"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Team Tools\\DiagnosticsHub\\Collector"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\Llvm\\x64\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x64"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\\\MSBuild\\Current\\Bin\\amd64"
+        - "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\Tools\\"
+        - "C:\\msys64\\home\\julia\\.cabal\\bin"
+        - "C:\\ghcup\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\ucrt64\\bin\\site_perl\\5.38.4"
+        - "C:\\msys64\\ucrt64\\bin\\vendor_perl"
+        - "C:\\msys64\\ucrt64\\bin\\core_perl"
+        - "C:\\msys64\\usr\\local\\bin"
+        - "C:\\msys64\\usr\\bin"
+        - "C:\\msys64\\usr\\bin"
+        - "C:\\Windows\\System32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\msys64\\ucrt64\\lib\\emscripten"
+        - "C:\\msys64\\ucrt64\\lib\\rustup\\bin"
+        - "C:\\Program Files\\Microsoft VS Code\\bin"
+        - "D:\\gdrive\\numericrepresentations_gamma"
+        - "D:\\gdrive\\numericrepresentations_gamma\\scripts"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\vcpkg"
+      ENV{INCLUDE}:
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\include"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\ATLMFC\\include"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Auxiliary\\VS\\include"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.26100.0\\ucrt"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\\\include\\10.0.26100.0\\\\um"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\\\include\\10.0.26100.0\\\\shared"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\\\include\\10.0.26100.0\\\\winrt"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\\\include\\10.0.26100.0\\\\cppwinrt"
+        - "C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\include\\um"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      Versi├│n de MSBuild 17.14.23+b0019275e para .NET Framework
+      Compilaci├│n iniciada a las 01/12/2025 20:58:26.
+      
+      Proyecto "C:\\msys64\\home\\julia\\Xperiment\\build\\CMakeFiles\\4.2.0\\CompilerIdCXX\\CompilerIdCXX.vcxproj" en nodo 1 (destinos predeterminados).
+      PrepareForBuild:
+        Creando directorio "Debug\\".
+        La salida estructurada est├í habilitada. El formato del diagn├│stico del compilador reflejar├í la jerarqu├¡a de errores. Consulte https://aka.ms/cpp/structured-output para obtener m├ís detalles.
+        Creando directorio "Debug\\CompilerIdCXX.tlog\\".
+      InitializeBuildStatus:
+        Se crear├í "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" porque se especific├│ "AlwaysCreate".
+        Aplicando tarea Touch a "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+      ClCompile:
+        D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+      LINK : fatal error LNK1104: no se puede abrir el archivo 'ucrtd.lib' [C:\\msys64\\home\\julia\\Xperiment\\build\\CMakeFiles\\4.2.0\\CompilerIdCXX\\CompilerIdCXX.vcxproj]
+      Compilaci├│n del proyecto terminada "C:\\msys64\\home\\julia\\Xperiment\\build\\CMakeFiles\\4.2.0\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (destinos predeterminados) -- ERROR.
+      
+      ERROR al compilar.
+      
+      "C:\\msys64\\home\\julia\\Xperiment\\build\\CMakeFiles\\4.2.0\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (destino predeterminado) (1) ->
+      (Link destino) -> 
+        LINK : fatal error LNK1104: no se puede abrir el archivo 'ucrtd.lib' [C:\\msys64\\home\\julia\\Xperiment\\build\\CMakeFiles\\4.2.0\\CompilerIdCXX\\CompilerIdCXX.vcxproj]
+      
+          0 Advertencia(s)
+          1 Errores
+      
+      Tiempo transcurrido 00:00:00.54
+      
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindBinUtils.cmake:103 (__resolve_linker_path)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "link"
+    candidate_directories:
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/VC/vcpackages/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/TestWindow/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team Explorer/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/Roslyn/"
+      - "C:/Program Files (x86)/Microsoft SDKs/Windows/v10.0A/bin/NETFX 4.8 Tools/x64/"
+      - "C:/Program Files (x86)/HTML Help Workshop/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/FSharp/Tools/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Team Tools/DiagnosticsHub/Collector/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/Llvm/x64/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/x64/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/"
+      - "C:/Windows/Microsoft.NET/Framework64/v4.0.30319/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/Tools/"
+      - "C:/msys64/home/julia/.cabal/bin/"
+      - "C:/ghcup/bin/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/msys64/ucrt64/bin/site_perl/5.38.4/"
+      - "C:/msys64/ucrt64/bin/vendor_perl/"
+      - "C:/msys64/ucrt64/bin/core_perl/"
+      - "C:/msys64/usr/local/bin/"
+      - "C:/msys64/usr/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/msys64/ucrt64/lib/emscripten/"
+      - "C:/msys64/ucrt64/lib/rustup/bin/"
+      - "C:/Program Files/Microsoft VS Code/bin/"
+      - "D:/GDrive/NumericRepresentations_gamma/"
+      - "D:/GDrive/NumericRepresentations_gamma/scripts/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/"
+    searched_directories:
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.com"
+    found: "D:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.exe"
+    search_context:
+      ENV{PATH}:
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\VCPackages"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\bin\\Roslyn"
+        - "C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v10.0A\\bin\\NETFX 4.8 Tools\\x64\\"
+        - "C:\\Program Files (x86)\\HTML Help Workshop"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\FSharp\\Tools"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Team Tools\\DiagnosticsHub\\Collector"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\Llvm\\x64\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x64"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\\\MSBuild\\Current\\Bin\\amd64"
+        - "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\Tools\\"
+        - "C:\\msys64\\home\\julia\\.cabal\\bin"
+        - "C:\\ghcup\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\ucrt64\\bin\\site_perl\\5.38.4"
+        - "C:\\msys64\\ucrt64\\bin\\vendor_perl"
+        - "C:\\msys64\\ucrt64\\bin\\core_perl"
+        - "C:\\msys64\\usr\\local\\bin"
+        - "C:\\msys64\\usr\\bin"
+        - "C:\\msys64\\usr\\bin"
+        - "C:\\Windows\\System32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\msys64\\ucrt64\\lib\\emscripten"
+        - "C:\\msys64\\ucrt64\\lib\\rustup\\bin"
+        - "C:\\Program Files\\Microsoft VS Code\\bin"
+        - "D:\\gdrive\\numericrepresentations_gamma"
+        - "D:\\gdrive\\numericrepresentations_gamma\\scripts"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\vcpkg"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindBinUtils.cmake:104 (__resolve_linker_path)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lld-link"
+    candidate_directories:
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/VC/vcpackages/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/TestWindow/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team Explorer/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/Roslyn/"
+      - "C:/Program Files (x86)/Microsoft SDKs/Windows/v10.0A/bin/NETFX 4.8 Tools/x64/"
+      - "C:/Program Files (x86)/HTML Help Workshop/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/FSharp/Tools/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Team Tools/DiagnosticsHub/Collector/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/Llvm/x64/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/x64/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/"
+      - "C:/Windows/Microsoft.NET/Framework64/v4.0.30319/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/Tools/"
+      - "C:/msys64/home/julia/.cabal/bin/"
+      - "C:/ghcup/bin/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/msys64/ucrt64/bin/site_perl/5.38.4/"
+      - "C:/msys64/ucrt64/bin/vendor_perl/"
+      - "C:/msys64/ucrt64/bin/core_perl/"
+      - "C:/msys64/usr/local/bin/"
+      - "C:/msys64/usr/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/msys64/ucrt64/lib/emscripten/"
+      - "C:/msys64/ucrt64/lib/rustup/bin/"
+      - "C:/Program Files/Microsoft VS Code/bin/"
+      - "D:/GDrive/NumericRepresentations_gamma/"
+      - "D:/GDrive/NumericRepresentations_gamma/scripts/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/"
+    searched_directories:
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.com"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.exe"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/VC/vcpackages/lld-link.com"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/VC/vcpackages/lld-link.exe"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/VC/vcpackages/lld-link"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/TestWindow/lld-link.com"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/TestWindow/lld-link.exe"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/TestWindow/lld-link"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team Explorer/lld-link.com"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team Explorer/lld-link.exe"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team Explorer/lld-link"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/Roslyn/lld-link.com"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/Roslyn/lld-link.exe"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/Roslyn/lld-link"
+      - "C:/Program Files (x86)/Microsoft SDKs/Windows/v10.0A/bin/NETFX 4.8 Tools/x64/lld-link.com"
+      - "C:/Program Files (x86)/Microsoft SDKs/Windows/v10.0A/bin/NETFX 4.8 Tools/x64/lld-link.exe"
+      - "C:/Program Files (x86)/Microsoft SDKs/Windows/v10.0A/bin/NETFX 4.8 Tools/x64/lld-link"
+      - "C:/Program Files (x86)/HTML Help Workshop/lld-link.com"
+      - "C:/Program Files (x86)/HTML Help Workshop/lld-link.exe"
+      - "C:/Program Files (x86)/HTML Help Workshop/lld-link"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/FSharp/Tools/lld-link.com"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/FSharp/Tools/lld-link.exe"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/FSharp/Tools/lld-link"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Team Tools/DiagnosticsHub/Collector/lld-link.com"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Team Tools/DiagnosticsHub/Collector/lld-link.exe"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Team Tools/DiagnosticsHub/Collector/lld-link"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/Llvm/x64/bin/lld-link.com"
+    found: "D:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/Llvm/x64/bin/lld-link.exe"
+    search_context:
+      ENV{PATH}:
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\VCPackages"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\bin\\Roslyn"
+        - "C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v10.0A\\bin\\NETFX 4.8 Tools\\x64\\"
+        - "C:\\Program Files (x86)\\HTML Help Workshop"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\FSharp\\Tools"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Team Tools\\DiagnosticsHub\\Collector"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\Llvm\\x64\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x64"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\\\MSBuild\\Current\\Bin\\amd64"
+        - "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\Tools\\"
+        - "C:\\msys64\\home\\julia\\.cabal\\bin"
+        - "C:\\ghcup\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\ucrt64\\bin\\site_perl\\5.38.4"
+        - "C:\\msys64\\ucrt64\\bin\\vendor_perl"
+        - "C:\\msys64\\ucrt64\\bin\\core_perl"
+        - "C:\\msys64\\usr\\local\\bin"
+        - "C:\\msys64\\usr\\bin"
+        - "C:\\msys64\\usr\\bin"
+        - "C:\\Windows\\System32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\msys64\\ucrt64\\lib\\emscripten"
+        - "C:\\msys64\\ucrt64\\lib\\rustup\\bin"
+        - "C:\\Program Files\\Microsoft VS Code\\bin"
+        - "D:\\gdrive\\numericrepresentations_gamma"
+        - "D:\\gdrive\\numericrepresentations_gamma\\scripts"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\vcpkg"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_LINKER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "link"
+    candidate_directories:
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/VC/vcpackages/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/TestWindow/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team Explorer/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/Roslyn/"
+      - "C:/Program Files (x86)/Microsoft SDKs/Windows/v10.0A/bin/NETFX 4.8 Tools/x64/"
+      - "C:/Program Files (x86)/HTML Help Workshop/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/FSharp/Tools/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Team Tools/DiagnosticsHub/Collector/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/Llvm/x64/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/x64/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/"
+      - "C:/Windows/Microsoft.NET/Framework64/v4.0.30319/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/Tools/"
+      - "C:/msys64/home/julia/.cabal/bin/"
+      - "C:/ghcup/bin/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/msys64/ucrt64/bin/site_perl/5.38.4/"
+      - "C:/msys64/ucrt64/bin/vendor_perl/"
+      - "C:/msys64/ucrt64/bin/core_perl/"
+      - "C:/msys64/usr/local/bin/"
+      - "C:/msys64/usr/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/msys64/ucrt64/lib/emscripten/"
+      - "C:/msys64/ucrt64/lib/rustup/bin/"
+      - "C:/Program Files/Microsoft VS Code/bin/"
+      - "D:/GDrive/NumericRepresentations_gamma/"
+      - "D:/GDrive/NumericRepresentations_gamma/scripts/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/"
+    searched_directories:
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.com"
+    found: "D:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.exe"
+    search_context:
+      ENV{PATH}:
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\VCPackages"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\bin\\Roslyn"
+        - "C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v10.0A\\bin\\NETFX 4.8 Tools\\x64\\"
+        - "C:\\Program Files (x86)\\HTML Help Workshop"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\FSharp\\Tools"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Team Tools\\DiagnosticsHub\\Collector"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\Llvm\\x64\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x64"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\\\MSBuild\\Current\\Bin\\amd64"
+        - "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\Tools\\"
+        - "C:\\msys64\\home\\julia\\.cabal\\bin"
+        - "C:\\ghcup\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\ucrt64\\bin\\site_perl\\5.38.4"
+        - "C:\\msys64\\ucrt64\\bin\\vendor_perl"
+        - "C:\\msys64\\ucrt64\\bin\\core_perl"
+        - "C:\\msys64\\usr\\local\\bin"
+        - "C:\\msys64\\usr\\bin"
+        - "C:\\msys64\\usr\\bin"
+        - "C:\\Windows\\System32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\msys64\\ucrt64\\lib\\emscripten"
+        - "C:\\msys64\\ucrt64\\lib\\rustup\\bin"
+        - "C:\\Program Files\\Microsoft VS Code\\bin"
+        - "D:\\gdrive\\numericrepresentations_gamma"
+        - "D:\\gdrive\\numericrepresentations_gamma\\scripts"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\vcpkg"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_MT"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "mt"
+    candidate_directories:
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/VC/vcpackages/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/TestWindow/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team Explorer/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/Roslyn/"
+      - "C:/Program Files (x86)/Microsoft SDKs/Windows/v10.0A/bin/NETFX 4.8 Tools/x64/"
+      - "C:/Program Files (x86)/HTML Help Workshop/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/FSharp/Tools/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Team Tools/DiagnosticsHub/Collector/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/Llvm/x64/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/x64/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/"
+      - "C:/Windows/Microsoft.NET/Framework64/v4.0.30319/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/Tools/"
+      - "C:/msys64/home/julia/.cabal/bin/"
+      - "C:/ghcup/bin/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/msys64/ucrt64/bin/site_perl/5.38.4/"
+      - "C:/msys64/ucrt64/bin/vendor_perl/"
+      - "C:/msys64/ucrt64/bin/core_perl/"
+      - "C:/msys64/usr/local/bin/"
+      - "C:/msys64/usr/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/msys64/ucrt64/lib/emscripten/"
+      - "C:/msys64/ucrt64/lib/rustup/bin/"
+      - "C:/Program Files/Microsoft VS Code/bin/"
+      - "D:/GDrive/NumericRepresentations_gamma/"
+      - "D:/GDrive/NumericRepresentations_gamma/scripts/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/"
+    searched_directories:
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt.com"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt.exe"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/VC/vcpackages/mt.com"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/VC/vcpackages/mt.exe"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/VC/vcpackages/mt"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/TestWindow/mt.com"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/TestWindow/mt.exe"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/TestWindow/mt"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team Explorer/mt.com"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team Explorer/mt.exe"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team Explorer/mt"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/Roslyn/mt.com"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/Roslyn/mt.exe"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/Roslyn/mt"
+      - "C:/Program Files (x86)/Microsoft SDKs/Windows/v10.0A/bin/NETFX 4.8 Tools/x64/mt.com"
+      - "C:/Program Files (x86)/Microsoft SDKs/Windows/v10.0A/bin/NETFX 4.8 Tools/x64/mt.exe"
+      - "C:/Program Files (x86)/Microsoft SDKs/Windows/v10.0A/bin/NETFX 4.8 Tools/x64/mt"
+      - "C:/Program Files (x86)/HTML Help Workshop/mt.com"
+      - "C:/Program Files (x86)/HTML Help Workshop/mt.exe"
+      - "C:/Program Files (x86)/HTML Help Workshop/mt"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/FSharp/Tools/mt.com"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/FSharp/Tools/mt.exe"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/FSharp/Tools/mt"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Team Tools/DiagnosticsHub/Collector/mt.com"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Team Tools/DiagnosticsHub/Collector/mt.exe"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Team Tools/DiagnosticsHub/Collector/mt"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/Llvm/x64/bin/mt.com"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/Llvm/x64/bin/mt.exe"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/Llvm/x64/bin/mt"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/mt.com"
+    found: "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/mt.exe"
+    search_context:
+      ENV{PATH}:
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\VCPackages"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\bin\\Roslyn"
+        - "C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v10.0A\\bin\\NETFX 4.8 Tools\\x64\\"
+        - "C:\\Program Files (x86)\\HTML Help Workshop"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\FSharp\\Tools"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Team Tools\\DiagnosticsHub\\Collector"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\Llvm\\x64\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x64"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\\\MSBuild\\Current\\Bin\\amd64"
+        - "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\Tools\\"
+        - "C:\\msys64\\home\\julia\\.cabal\\bin"
+        - "C:\\ghcup\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\ucrt64\\bin\\site_perl\\5.38.4"
+        - "C:\\msys64\\ucrt64\\bin\\vendor_perl"
+        - "C:\\msys64\\ucrt64\\bin\\core_perl"
+        - "C:\\msys64\\usr\\local\\bin"
+        - "C:\\msys64\\usr\\bin"
+        - "C:\\msys64\\usr\\bin"
+        - "C:\\Windows\\System32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\msys64\\ucrt64\\lib\\emscripten"
+        - "C:\\msys64\\ucrt64\\lib\\rustup\\bin"
+        - "C:\\Program Files\\Microsoft VS Code\\bin"
+        - "D:\\gdrive\\numericrepresentations_gamma"
+        - "D:\\gdrive\\numericrepresentations_gamma\\scripts"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\vcpkg"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_AR"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lib"
+    candidate_directories:
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/VC/vcpackages/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/TestWindow/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team Explorer/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/Roslyn/"
+      - "C:/Program Files (x86)/Microsoft SDKs/Windows/v10.0A/bin/NETFX 4.8 Tools/x64/"
+      - "C:/Program Files (x86)/HTML Help Workshop/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/FSharp/Tools/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Team Tools/DiagnosticsHub/Collector/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/Llvm/x64/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/x64/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/"
+      - "C:/Windows/Microsoft.NET/Framework64/v4.0.30319/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/Tools/"
+      - "C:/msys64/home/julia/.cabal/bin/"
+      - "C:/ghcup/bin/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/msys64/ucrt64/bin/site_perl/5.38.4/"
+      - "C:/msys64/ucrt64/bin/vendor_perl/"
+      - "C:/msys64/ucrt64/bin/core_perl/"
+      - "C:/msys64/usr/local/bin/"
+      - "C:/msys64/usr/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/msys64/ucrt64/lib/emscripten/"
+      - "C:/msys64/ucrt64/lib/rustup/bin/"
+      - "C:/Program Files/Microsoft VS Code/bin/"
+      - "D:/GDrive/NumericRepresentations_gamma/"
+      - "D:/GDrive/NumericRepresentations_gamma/scripts/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/"
+    searched_directories:
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lib.com"
+    found: "D:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lib.exe"
+    search_context:
+      ENV{PATH}:
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\VCPackages"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\bin\\Roslyn"
+        - "C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v10.0A\\bin\\NETFX 4.8 Tools\\x64\\"
+        - "C:\\Program Files (x86)\\HTML Help Workshop"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\FSharp\\Tools"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Team Tools\\DiagnosticsHub\\Collector"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\Llvm\\x64\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x64"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\\\MSBuild\\Current\\Bin\\amd64"
+        - "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\Tools\\"
+        - "C:\\msys64\\home\\julia\\.cabal\\bin"
+        - "C:\\ghcup\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\ucrt64\\bin\\site_perl\\5.38.4"
+        - "C:\\msys64\\ucrt64\\bin\\vendor_perl"
+        - "C:\\msys64\\ucrt64\\bin\\core_perl"
+        - "C:\\msys64\\usr\\local\\bin"
+        - "C:\\msys64\\usr\\bin"
+        - "C:\\msys64\\usr\\bin"
+        - "C:\\Windows\\System32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\msys64\\ucrt64\\lib\\emscripten"
+        - "C:\\msys64\\ucrt64\\lib\\rustup\\bin"
+        - "C:\\Program Files\\Microsoft VS Code\\bin"
+        - "D:\\gdrive\\numericrepresentations_gamma"
+        - "D:\\gdrive\\numericrepresentations_gamma\\scripts"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\vcpkg"
+...
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "C:/msys64/ucrt64/share/cmake/Modules/"
+    found: "C:/msys64/ucrt64/share/cmake/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      ENV{PATH}:
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\VCPackages"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\bin\\Roslyn"
+        - "C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v10.0A\\bin\\NETFX 4.8 Tools\\x64\\"
+        - "C:\\Program Files (x86)\\HTML Help Workshop"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\FSharp\\Tools"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Team Tools\\DiagnosticsHub\\Collector"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\Llvm\\x64\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x64"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\\\MSBuild\\Current\\Bin\\amd64"
+        - "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\Tools\\"
+        - "C:\\msys64\\home\\julia\\.cabal\\bin"
+        - "C:\\ghcup\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\ucrt64\\bin\\site_perl\\5.38.4"
+        - "C:\\msys64\\ucrt64\\bin\\vendor_perl"
+        - "C:\\msys64\\ucrt64\\bin\\core_perl"
+        - "C:\\msys64\\usr\\local\\bin"
+        - "C:\\msys64\\usr\\bin"
+        - "C:\\msys64\\usr\\bin"
+        - "C:\\Windows\\System32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\msys64\\ucrt64\\lib\\emscripten"
+        - "C:\\msys64\\ucrt64\\lib\\rustup\\bin"
+        - "C:\\Program Files\\Microsoft VS Code\\bin"
+        - "D:\\gdrive\\numericrepresentations_gamma"
+        - "D:\\gdrive\\numericrepresentations_gamma\\scripts"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\vcpkg"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files/Xperiment"
+      ENV{INCLUDE}:
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\include"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\ATLMFC\\include"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Auxiliary\\VS\\include"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.26100.0\\ucrt"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\\\include\\10.0.26100.0\\\\um"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\\\include\\10.0.26100.0\\\\shared"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\\\include\\10.0.26100.0\\\\winrt"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\\\include\\10.0.26100.0\\\\cppwinrt"
+        - "C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\include\\um"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      Versi├│n de MSBuild 17.14.23+b0019275e para .NET Framework
+      Compilaci├│n iniciada a las 01/12/2025 20:58:41.
+      
+      Proyecto "C:\\msys64\\home\\julia\\Xperiment\\build\\CMakeFiles\\4.2.0\\CompilerIdCXX\\CompilerIdCXX.vcxproj" en nodo 1 (destinos predeterminados).
+      PrepareForBuild:
+        Creando directorio "Debug\\".
+        La salida estructurada est├í habilitada. El formato del diagn├│stico del compilador reflejar├í la jerarqu├¡a de errores. Consulte https://aka.ms/cpp/structured-output para obtener m├ís detalles.
+        Creando directorio "Debug\\CompilerIdCXX.tlog\\".
+      InitializeBuildStatus:
+        Se crear├í "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" porque se especific├│ "AlwaysCreate".
+        Aplicando tarea Touch a "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+      ClCompile:
+        D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+      LINK : fatal error LNK1104: no se puede abrir el archivo 'ucrtd.lib' [C:\\msys64\\home\\julia\\Xperiment\\build\\CMakeFiles\\4.2.0\\CompilerIdCXX\\CompilerIdCXX.vcxproj]
+      Compilaci├│n del proyecto terminada "C:\\msys64\\home\\julia\\Xperiment\\build\\CMakeFiles\\4.2.0\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (destinos predeterminados) -- ERROR.
+      
+      ERROR al compilar.
+      
+      "C:\\msys64\\home\\julia\\Xperiment\\build\\CMakeFiles\\4.2.0\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (destino predeterminado) (1) ->
+      (Link destino) -> 
+        LINK : fatal error LNK1104: no se puede abrir el archivo 'ucrtd.lib' [C:\\msys64\\home\\julia\\Xperiment\\build\\CMakeFiles\\4.2.0\\CompilerIdCXX\\CompilerIdCXX.vcxproj]
+      
+          0 Advertencia(s)
+          1 Errores
+      
+      Tiempo transcurrido 00:00:00.55
+      
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "C:/msys64/ucrt64/share/cmake/Modules/"
+    found: "C:/msys64/ucrt64/share/cmake/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      ENV{PATH}:
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\VCPackages"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\bin\\Roslyn"
+        - "C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v10.0A\\bin\\NETFX 4.8 Tools\\x64\\"
+        - "C:\\Program Files (x86)\\HTML Help Workshop"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\FSharp\\Tools"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Team Tools\\DiagnosticsHub\\Collector"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\Llvm\\x64\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x64"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\\\MSBuild\\Current\\Bin\\amd64"
+        - "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\Tools\\"
+        - "C:\\msys64\\home\\julia\\.cabal\\bin"
+        - "C:\\ghcup\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\ucrt64\\bin\\site_perl\\5.38.4"
+        - "C:\\msys64\\ucrt64\\bin\\vendor_perl"
+        - "C:\\msys64\\ucrt64\\bin\\core_perl"
+        - "C:\\msys64\\usr\\local\\bin"
+        - "C:\\msys64\\usr\\bin"
+        - "C:\\msys64\\usr\\bin"
+        - "C:\\Windows\\System32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\msys64\\ucrt64\\lib\\emscripten"
+        - "C:\\msys64\\ucrt64\\lib\\rustup\\bin"
+        - "C:\\Program Files\\Microsoft VS Code\\bin"
+        - "D:\\gdrive\\numericrepresentations_gamma"
+        - "D:\\gdrive\\numericrepresentations_gamma\\scripts"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\vcpkg"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files/Xperiment"
+      ENV{INCLUDE}:
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\include"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\ATLMFC\\include"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Auxiliary\\VS\\include"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.26100.0\\ucrt"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\\\include\\10.0.26100.0\\\\um"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\\\include\\10.0.26100.0\\\\shared"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\\\include\\10.0.26100.0\\\\winrt"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\\\include\\10.0.26100.0\\\\cppwinrt"
+        - "C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\include\\um"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      Versi├│n de MSBuild 17.14.23+b0019275e para .NET Framework
+      Compilaci├│n iniciada a las 01/12/2025 20:58:42.
+      
+      Proyecto "C:\\msys64\\home\\julia\\Xperiment\\build\\CMakeFiles\\4.2.0\\CompilerIdCXX\\CompilerIdCXX.vcxproj" en nodo 1 (destinos predeterminados).
+      PrepareForBuild:
+        Creando directorio "Debug\\".
+        La salida estructurada est├í habilitada. El formato del diagn├│stico del compilador reflejar├í la jerarqu├¡a de errores. Consulte https://aka.ms/cpp/structured-output para obtener m├ís detalles.
+        Creando directorio "Debug\\CompilerIdCXX.tlog\\".
+      InitializeBuildStatus:
+        Se crear├í "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" porque se especific├│ "AlwaysCreate".
+        Aplicando tarea Touch a "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+      ClCompile:
+        D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+      LINK : fatal error LNK1104: no se puede abrir el archivo 'ucrtd.lib' [C:\\msys64\\home\\julia\\Xperiment\\build\\CMakeFiles\\4.2.0\\CompilerIdCXX\\CompilerIdCXX.vcxproj]
+      Compilaci├│n del proyecto terminada "C:\\msys64\\home\\julia\\Xperiment\\build\\CMakeFiles\\4.2.0\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (destinos predeterminados) -- ERROR.
+      
+      ERROR al compilar.
+      
+      "C:\\msys64\\home\\julia\\Xperiment\\build\\CMakeFiles\\4.2.0\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (destino predeterminado) (1) ->
+      (Link destino) -> 
+        LINK : fatal error LNK1104: no se puede abrir el archivo 'ucrtd.lib' [C:\\msys64\\home\\julia\\Xperiment\\build\\CMakeFiles\\4.2.0\\CompilerIdCXX\\CompilerIdCXX.vcxproj]
+      
+          0 Advertencia(s)
+          1 Errores
+      
+      Tiempo transcurrido 00:00:00.54
+      
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindBinUtils.cmake:103 (__resolve_linker_path)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "link"
+    candidate_directories:
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/VC/vcpackages/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/TestWindow/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team Explorer/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/Roslyn/"
+      - "C:/Program Files (x86)/Microsoft SDKs/Windows/v10.0A/bin/NETFX 4.8 Tools/x64/"
+      - "C:/Program Files (x86)/HTML Help Workshop/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/FSharp/Tools/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Team Tools/DiagnosticsHub/Collector/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/Llvm/x64/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/x64/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/"
+      - "C:/Windows/Microsoft.NET/Framework64/v4.0.30319/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/Tools/"
+      - "C:/msys64/home/julia/.cabal/bin/"
+      - "C:/ghcup/bin/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/msys64/ucrt64/bin/site_perl/5.38.4/"
+      - "C:/msys64/ucrt64/bin/vendor_perl/"
+      - "C:/msys64/ucrt64/bin/core_perl/"
+      - "C:/msys64/usr/local/bin/"
+      - "C:/msys64/usr/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/msys64/ucrt64/lib/emscripten/"
+      - "C:/msys64/ucrt64/lib/rustup/bin/"
+      - "C:/Program Files/Microsoft VS Code/bin/"
+      - "D:/GDrive/NumericRepresentations_gamma/"
+      - "D:/GDrive/NumericRepresentations_gamma/scripts/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/"
+    searched_directories:
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.com"
+    found: "D:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.exe"
+    search_context:
+      ENV{PATH}:
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\VCPackages"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\bin\\Roslyn"
+        - "C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v10.0A\\bin\\NETFX 4.8 Tools\\x64\\"
+        - "C:\\Program Files (x86)\\HTML Help Workshop"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\FSharp\\Tools"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Team Tools\\DiagnosticsHub\\Collector"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\Llvm\\x64\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x64"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\\\MSBuild\\Current\\Bin\\amd64"
+        - "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\Tools\\"
+        - "C:\\msys64\\home\\julia\\.cabal\\bin"
+        - "C:\\ghcup\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\ucrt64\\bin\\site_perl\\5.38.4"
+        - "C:\\msys64\\ucrt64\\bin\\vendor_perl"
+        - "C:\\msys64\\ucrt64\\bin\\core_perl"
+        - "C:\\msys64\\usr\\local\\bin"
+        - "C:\\msys64\\usr\\bin"
+        - "C:\\msys64\\usr\\bin"
+        - "C:\\Windows\\System32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\msys64\\ucrt64\\lib\\emscripten"
+        - "C:\\msys64\\ucrt64\\lib\\rustup\\bin"
+        - "C:\\Program Files\\Microsoft VS Code\\bin"
+        - "D:\\gdrive\\numericrepresentations_gamma"
+        - "D:\\gdrive\\numericrepresentations_gamma\\scripts"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\vcpkg"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files/Xperiment"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeFindBinUtils.cmake:104 (__resolve_linker_path)"
+      - "C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lld-link"
+    candidate_directories:
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/VC/vcpackages/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/TestWindow/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team Explorer/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/Roslyn/"
+      - "C:/Program Files (x86)/Microsoft SDKs/Windows/v10.0A/bin/NETFX 4.8 Tools/x64/"
+      - "C:/Program Files (x86)/HTML Help Workshop/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/FSharp/Tools/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Team Tools/DiagnosticsHub/Collector/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/Llvm/x64/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/x64/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/"
+      - "C:/Windows/Microsoft.NET/Framework64/v4.0.30319/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/Tools/"
+      - "C:/msys64/home/julia/.cabal/bin/"
+      - "C:/ghcup/bin/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/msys64/ucrt64/bin/site_perl/5.38.4/"
+      - "C:/msys64/ucrt64/bin/vendor_perl/"
+      - "C:/msys64/ucrt64/bin/core_perl/"
+      - "C:/msys64/usr/local/bin/"
+      - "C:/msys64/usr/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/msys64/ucrt64/lib/emscripten/"
+      - "C:/msys64/ucrt64/lib/rustup/bin/"
+      - "C:/Program Files/Microsoft VS Code/bin/"
+      - "D:/GDrive/NumericRepresentations_gamma/"
+      - "D:/GDrive/NumericRepresentations_gamma/scripts/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/VC/vcpkg/"
+    searched_directories:
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.com"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.exe"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/VC/vcpackages/lld-link.com"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/VC/vcpackages/lld-link.exe"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/VC/vcpackages/lld-link"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/TestWindow/lld-link.com"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/TestWindow/lld-link.exe"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/TestWindow/lld-link"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team Explorer/lld-link.com"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team Explorer/lld-link.exe"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team Explorer/lld-link"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/Roslyn/lld-link.com"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/Roslyn/lld-link.exe"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/Roslyn/lld-link"
+      - "C:/Program Files (x86)/Microsoft SDKs/Windows/v10.0A/bin/NETFX 4.8 Tools/x64/lld-link.com"
+      - "C:/Program Files (x86)/Microsoft SDKs/Windows/v10.0A/bin/NETFX 4.8 Tools/x64/lld-link.exe"
+      - "C:/Program Files (x86)/Microsoft SDKs/Windows/v10.0A/bin/NETFX 4.8 Tools/x64/lld-link"
+      - "C:/Program Files (x86)/HTML Help Workshop/lld-link.com"
+      - "C:/Program Files (x86)/HTML Help Workshop/lld-link.exe"
+      - "C:/Program Files (x86)/HTML Help Workshop/lld-link"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/FSharp/Tools/lld-link.com"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/FSharp/Tools/lld-link.exe"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/FSharp/Tools/lld-link"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Team Tools/DiagnosticsHub/Collector/lld-link.com"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Team Tools/DiagnosticsHub/Collector/lld-link.exe"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/Team Tools/DiagnosticsHub/Collector/lld-link"
+      - "D:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/Llvm/x64/bin/lld-link.com"
+    found: "D:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/Llvm/x64/bin/lld-link.exe"
+    search_context:
+      ENV{PATH}:
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\VCPackages"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\bin\\Roslyn"
+        - "C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v10.0A\\bin\\NETFX 4.8 Tools\\x64\\"
+        - "C:\\Program Files (x86)\\HTML Help Workshop"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\FSharp\\Tools"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Team Tools\\DiagnosticsHub\\Collector"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\Llvm\\x64\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x64"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\\\MSBuild\\Current\\Bin\\amd64"
+        - "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\Tools\\"
+        - "C:\\msys64\\home\\julia\\.cabal\\bin"
+        - "C:\\ghcup\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\msys64\\ucrt64\\bin\\site_perl\\5.38.4"
+        - "C:\\msys64\\ucrt64\\bin\\vendor_perl"
+        - "C:\\msys64\\ucrt64\\bin\\core_perl"
+        - "C:\\msys64\\usr\\local\\bin"
+        - "C:\\msys64\\usr\\bin"
+        - "C:\\msys64\\usr\\bin"
+        - "C:\\Windows\\System32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\msys64\\ucrt64\\lib\\emscripten"
+        - "C:\\msys64\\ucrt64\\lib\\rustup\\bin"
+        - "C:\\Program Files\\Microsoft VS Code\\bin"
+        - "D:\\gdrive\\numericrepresentations_gamma"
+        - "D:\\gdrive\\numericrepresentations_gamma\\scripts"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
+        - "D:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\vcpkg"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files/Xperiment"
+...
