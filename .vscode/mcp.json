@@ -1,19 +1,12 @@
 {
 	"servers": {
 		"github": {
-			"command": "docker",
-			"args": [
-				"run",
-				"-i",
-				"--rm",
-				"-e",
-				"GITHUB_PERSONAL_ACCESS_TOKEN",
-				"ghcr.io/github/github-mcp-server"
-			],
-			"env": {
-				"GITHUB_PERSONAL_ACCESS_TOKEN": "${input:github_token}"
-			},
-			"type": "stdio"
+			"type": "http",
+			"url": "https://api.githubcopilot.com/mcp/"
+		},
+		"microsoft-learn": {
+			"type": "http",
+			"url": "https://learn.microsoft.com/api/mcp"
 		}
 	},
 	"inputs": [
