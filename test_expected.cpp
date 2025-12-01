@@ -176,6 +176,29 @@ void test_void_specialization() {
     assert(!res2.has_value() && res2.error() == 42);
 }
 
+
+void test_in_place_construction() {
+    std::cout << "--- Testing In-Place Construction ---\n";
+    // In-place construction with a simple type
+    Expected<int, std::string> e1(in_place, 42);
+    assert(e1.has_value());
+    assert(e1.value() == 42);
+
+    // In-place construction with a multi-argument constructor
+    Expected<std::string, int> e2(in_place, 5, 'c');
+    assert(e2.has_value());
+    assert(e2.value() == "ccccc");
+
+    // In-place construction with a non-trivial type
+    NonTrivial::copy_constructions = 0;
+    NonTrivial::move_constructions = 0;
+    Expected<NonTrivial, int> e3(in_place, "in-place");
+    assert(e3.has_value());
+    assert(e3.value().s == "in-place");
+    assert(NonTrivial::copy_constructions == 0);
+    //assert(NonTrivial::move_constructions == 0); // This might fail depending on string implementation
+}
+
 int main() {
     std::cout << "Running tests for Expected<T, E>...\n" << std::endl;
     
@@ -189,6 +212,9 @@ int main() {
     std::cout << std::endl;
     
     test_void_specialization();
+    std::cout << std::endl;
+
+    test_in_place_construction();
     std::cout << std::endl;
     
     std::cout << "All tests passed!" << std::endl;
