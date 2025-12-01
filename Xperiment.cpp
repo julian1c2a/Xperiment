@@ -18,225 +18,17 @@ enum class ParseError {
     BaseOutOfRange       // base-1 > uint32_max
 };
 
-// std::unexpected-compatible implementation for C++14
-template<typename E>
-struct Unexpected {
-    E error;
+// Estructura que faltaba en el código original
+struct DigitResult {
+    std::uint64_t digit;
+    std::uint64_t base;
+    std::uint32_t result;
 
-    constexpr explicit Unexpected(E e) noexcept : error(e) {}
-    
-    // Allow conversion from compatible error types (like std::unexpected)
-    template<typename G, typename = typename std::enable_if<!std::is_same<E, G>::value>::type>
-    constexpr Unexpected(const Unexpected<G>& other) noexcept : error(other.error) {}
-    
-    // Copy constructor
-    constexpr Unexpected(const Unexpected& other) = default;
-    
-    // Move constructor  
-    constexpr Unexpected(Unexpected&& other) = default;
-    
-    // Assignment operators
-    Unexpected& operator=(const Unexpected& other) = default;
-    Unexpected& operator=(Unexpected&& other) = default;
-    
-    // Equality operators (C++23 std::unexpected has these)
-    constexpr bool operator==(const Unexpected& other) const noexcept {
-        return error == other.error;
-    }
-    
-    constexpr bool operator!=(const Unexpected& other) const noexcept {
-        return error != other.error;
-    }
+    constexpr DigitResult(std::uint64_t d, std::uint64_t b)
+        : digit(d), base(b), result(static_cast<std::uint32_t>(d % b)) {}
 };
 
-// Helper function similar to std::make_unexpected
-template<typename E>
-constexpr Unexpected<typename std::decay<E>::type> make_unexpected(E&& e) noexcept {
-    return Unexpected<typename std::decay<E>::type>(static_cast<E&&>(e));
-}
-
-// Simplified Expected implementation for C++14/MSVC compatibility
-template<typename T, typename E>
-struct Expected {
-private:
-    T value_;
-    E error_;
-    bool has_value_;
-
-public:
-    // Value constructor
-    template<typename U = T>
-    constexpr Expected(U&& value) noexcept 
-        : value_(static_cast<U&&>(value)), error_(), has_value_(true) {}
-
-    // Error constructor
-    constexpr Expected(E error) noexcept 
-        : value_(), error_(error), has_value_(false) {}
-
-    // Unexpected constructor
-    constexpr Expected(Unexpected<E> unexpected) noexcept 
-        : value_(), error_(unexpected.error), has_value_(false) {}
-
-    // Template unexpected constructor for compatible types
-    template<typename G>
-    constexpr Expected(const Unexpected<G>& unexpected) noexcept 
-        : value_(), error_(unexpected.error), has_value_(false) {}
-
-    // Copy constructor
-    constexpr Expected(const Expected& other) noexcept 
-        : value_(other.value_), error_(other.error_), has_value_(other.has_value_) {}
-
-    // Move constructor
-    constexpr Expected(Expected&& other) noexcept 
-        : value_(static_cast<T&&>(other.value_)), error_(other.error_), has_value_(other.has_value_) {}
-
-    // Assignment operators
-    Expected& operator=(const Expected& other) noexcept {
-        if (this != &other) {
-            value_ = other.value_;
-            error_ = other.error_;
-            has_value_ = other.has_value_;
-        }
-        return *this;
-    }
-
-    Expected& operator=(Expected&& other) noexcept {
-        if (this != &other) {
-            value_ = static_cast<T&&>(other.value_);
-            error_ = other.error_;
-            has_value_ = other.has_value_;
-        }
-        return *this;
-    }
-
-    // Observer methods
-    constexpr bool has_value() const noexcept {
-        return has_value_;
-    }
-
-    constexpr explicit operator bool() const noexcept {
-        return has_value_;
-    }
-
-    // Value access
-    constexpr T& value() noexcept {
-        return value_;
-    }
-
-    constexpr const T& value() const noexcept {
-        return value_;
-    }
-
-    constexpr T& operator*() noexcept {
-        return value_;
-    }
-
-    constexpr const T& operator*() const noexcept {
-        return value_;
-    }
-
-    constexpr T* operator->() noexcept {
-        return &value_;
-    }
-
-    constexpr const T* operator->() const noexcept {
-        return &value_;
-    }
-
-    // Error access
-    constexpr E& error() noexcept {
-        return error_;
-    }
-
-    constexpr const E& error() const noexcept {
-        return error_;
-    }
-
-    // Value or default
-    template<typename U>
-    constexpr T value_or(U&& default_value) const noexcept {
-        return has_value_ ? value_ : static_cast<T>(static_cast<U&&>(default_value));
-    }
-
-    // Monadic operations (C++14 compatible)
-    template<typename F>
-    constexpr auto and_then(F&& func) const -> decltype(func(value_)) {
-        using ReturnType = decltype(func(value_));
-        if (has_value_) {
-            return func(value_);
-        } else {
-            return ReturnType(error_);
-        }
-    }
-
-    template<typename F>
-    constexpr auto or_else(F&& func) const -> Expected<T, E> {
-        if (!has_value_) {
-            return func(error_);
-        } else {
-            return *this;
-        }
-    }
-
-    template<typename F>
-    constexpr auto transform(F&& func) const -> Expected<decltype(func(value_)), E> {
-        using ReturnType = Expected<decltype(func(value_)), E>;
-        if (has_value_) {
-            return ReturnType(func(value_));
-        } else {
-            return ReturnType(error_);
-        }
-    }
-
-    // Transform error
-    template<typename F>
-    constexpr auto transform_error(F&& func) const -> Expected<T, decltype(func(error_))> {
-        using ReturnType = Expected<T, decltype(func(error_))>;
-        if (!has_value_) {
-            return ReturnType(make_unexpected(func(error_)));
-        } else {
-            return ReturnType(value_);
-        }
-    }
-};
-
-// Specialization for void
-template<typename E>
-struct Expected<void, E> {
-private:
-    E error_;
-    bool has_value_;
-
-public:
-    // Success constructor
-    constexpr Expected() noexcept : error_(), has_value_(true) {}
-
-    // Error constructor
-    constexpr Expected(E error) noexcept : error_(error), has_value_(false) {}
-
-    // Unexpected constructor
-    constexpr Expected(Unexpected<E> unexpected) noexcept : error_(unexpected.error), has_value_(false) {}
-
-    constexpr bool has_value() const noexcept {
-        return has_value_;
-    }
-
-    constexpr explicit operator bool() const noexcept {
-        return has_value_;
-    }
-
-    constexpr void value() const noexcept {
-        // void return, nothing to do
-    }
-
-    constexpr E& error() noexcept {
-        return error_;
-    }
-
-    constexpr const E& error() const noexcept {
-        return error_;
-    }
-};
+#include "expected_cpp14.hpp"
 
 // Helper para skippear blancos
 constexpr int skip_whitespace(const char* str, int index) noexcept {
@@ -285,6 +77,47 @@ constexpr Expected<std::uint64_t, ParseError> parse_number_simple(const char* co
     }
 
     return Expected<std::uint64_t, ParseError>(result);
+}
+
+// Función 'parse' que faltaba, necesaria para la clase Xperiment
+constexpr Expected<std::uint64_t, ParseError> parse(const char* const str) noexcept {
+    if (str == nullptr || str[0] == '\0') {
+        return make_unexpected(ParseError::Empty);
+    }
+    int start_index = 0;
+    start_index = skip_whitespace(str, start_index);
+
+    if (str[start_index] == '\0') {
+        return make_unexpected(ParseError::Empty);
+    }
+
+    int end_index = 0;
+    auto result = parse_number_simple(str, start_index, end_index);
+
+    if (!result.has_value()) {
+        return result;
+    }
+
+    // After a valid number, check for trailing characters.
+    int final_index = skip_whitespace(str, end_index);
+    if (str[final_index] != '\0') {
+        // Check if it was a blank between digits
+        bool has_more_digits = false;
+        int temp_idx = final_index;
+        while(str[temp_idx] != '\0') {
+            if (str[temp_idx] >= '0' && str[temp_idx] <= '9') {
+                has_more_digits = true;
+                break;
+            }
+            temp_idx++;
+        }
+        if (has_more_digits) {
+            return make_unexpected(ParseError::BlankInterDigits);
+        }
+        return make_unexpected(ParseError::InvalidCharacter);
+    }
+
+    return result;
 }
 
 // Versión simplificada del parser de formato de dígito para MSVC C++14
@@ -443,15 +276,13 @@ struct Xperiment {
     constexpr bool success() const noexcept { return result.has_value(); }
 };
 
-template<std::uint64_t B>
-	requires (B >= 2 && B-1 <= std::numeric_limits<std::uint32_t>::max())
+template<std::uint64_t B, typename std::enable_if<(B >= 2 && (B - 1) <= 4294967295ULL), int>::type = 0>
 struct digit {
     std::uint32_t value;
     constexpr digit(std::uint64_t v) noexcept : value(static_cast<std::uint32_t>(v % B)) {}
 };
 
-template<std::uint64_t B>
-	requires (B >= 2 && B - 1 <= std::numeric_limits<std::uint32_t>::max())
+template<std::uint64_t B, typename std::enable_if<(B >= 2 && (B - 1) <= 4294967295ULL), int>::type = 0>
 struct DigitXperiment {
     const Expected<digit<B>, ParseError> result;
 
@@ -475,11 +306,16 @@ static_assert(experiment1.result && *experiment1.result == 123, "Parse '123' sho
 static_assert(experiment2.result && *experiment2.result == 456789, "Parse '456789' should succeed with value 456789");
 static_assert(experiment3.result && *experiment3.result == 18446744073709551615ULL, "Parse max uint64_t should succeed");
 
-// Tests para formato de dígito
-constexpr DigitXperiment digitExp1("d#5#B3");              // 5 % 3 = 2
-constexpr DigitXperiment digitExp2("dig [7] B 10");        // 7 % 10 = 7
-constexpr DigitXperiment digitExp3("d  #  100  #  B  7");  // 100 % 7 = 2
-constexpr DigitXperiment digitExp4("dig[15]B16");          // 15 % 16 = 15
+// Tests para formato de dígito. Se necesita una versión no-template para constexpr
+using DigitXperiment3 = DigitXperiment<3>;
+using DigitXperiment7 = DigitXperiment<7>;
+using DigitXperiment10 = DigitXperiment<10>;
+using DigitXperiment16 = DigitXperiment<16>;
+
+constexpr DigitXperiment3 digitExp1("d#5#B3");              // 5 % 3 = 2
+constexpr DigitXperiment10 digitExp2("dig [7] B 10");        // 7 % 10 = 7
+constexpr DigitXperiment7 digitExp3("d  #  100  #  B  7");  // 100 % 7 = 2
+constexpr DigitXperiment16 digitExp4("dig[15]B16");          // 15 % 16 = 15
 
 static_assert(digitExp1.result && digitExp1.valor() == 2 && digitExp1.digit() == 5 && digitExp1.base() == 3, "d#5#B3 should work");
 static_assert(digitExp2.result && digitExp2.valor() == 7 && digitExp2.digit() == 7 && digitExp2.base() == 10, "dig [7] B 10 should work");
